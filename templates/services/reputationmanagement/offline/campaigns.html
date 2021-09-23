@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3">Campaigns</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/brand.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Campaign and it's relevancy.
+                        </h2>
+
+                    <div class="points"><h6> Marketing campaigns promote products through different types of media, such as television, radio, print, and online platforms. Campaigns are not solely reliant on advertising and can include demonstrations, video conferencing, and other interactive techniques.</h6> </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                 <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Mapping out a clear picture </h2>
+                        <div><h5>Delivering a narrative</h5> </div>
+                        <div class="points"><h6>We at Polus technologies, sketch out a clear picture of what you and your brand need and develop a campaign that really stands out from the crowd. Together we put your message on the right label. </h6> </div>
+
+                        <div class="points"><h6>
+                            We pursue the following services to flair your victorious campaign.
+                            </h6> </div>
+                         </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/plan.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container services">
+        <div class="row gy-4 pt-20">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h5>In-depth research and Planning</h5>
+                    <p>Our strategy and planning services will help you identify the channels, platforms, media, and budgets to help you achieve your objectives and more importantly, exceed your expectations.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <h5>Channel Strategy & Media Planning</h5>
+
+                    <p>We cut through the media clutter by identifying key channels and tying them together into a comprehensive plan to reach prospective audiences and deliver on your campaign objectives.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Data, Analytics & Optimization</h5>
+                    <p> Before launching your campaign, we ensure that it is designed to collect massive amounts of data via analytics and data platforms, allowing us to measure your KPIs, gather insights, and identify areas for improvement. </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Account auditing and setup</h5>
+                    <p>
+                        The dedicated team of Polus Technologies conducts systematic reviews of your digital advertising accounts on a regular basis to ensure they are optimally configured and error-free.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Staffing solutions</h5>
+                    <p>
+                        We provide you excellent staffing solutions to better integrate social and digital advertising into existing marketing team. Team training and consultation, we undertake with great care.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Account auditing and setup</h5>
+                    <p>
+                       Our dedicated team conducts systematic reviews of your digital advertising accounts on a regular basis to ensure they are optimally configured and error-free.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title-center pb-0">
+                    <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                    <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="shape9"></span>
+    <span class="shape12"></span>
+    <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+    <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+</section>
+</main>
+{% endblock %}

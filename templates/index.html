@@ -1,0 +1,251 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <!-- Banner Area -->
+    <section class="banner-area ">
+        <div class="container slides fade0">
+            <div class="row flex-md-row align-items-center">
+                <div class="col-md-7">
+                    <div class="banner-left">
+                    <h1> Providing comprehensive strategies for every aspect of <span>execution, <svg width="225" height="16" viewBox="0 0 225 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M224.931 15.1987C151.063 1.40293 47.4825 6.23252 4.92601 10.3718L0.241161 6.21004C91.4615 -6.66766 188.043 6.83677 224.931 15.1987Z" fill="#7961AA"/></svg></span><span>branding, <svg width="225" height="16" viewBox="0 0 225 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M224.931 15.1987C151.063 1.40293 47.4825 6.23252 4.92601 10.3718L0.241161 6.21004C91.4615 -6.66766 188.043 6.83677 224.931 15.1987Z" fill="#7961AA"/></svg></span> and <span>growth. <svg width="225" height="16" viewBox="0 0 225 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M224.931 15.1987C151.063 1.40293 47.4825 6.23252 4.92601 10.3718L0.241161 6.21004C91.4615 -6.66766 188.043 6.83677 224.931 15.1987Z" fill="#7961AA"/></svg></span>
+                    </h1>
+                    <a href="comingsoon.html"><button type="submit" class="btn btn-red mt-4" >Explore -></button></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="banner-right">
+                        <img class="banner-shapes2 wow animate__animated animate__fadeInDown" src="{% static 'graphics/three.svg' %}" alt="Shape Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container slides fade0">
+            <div class="row  flex-md-row align-items-center">
+                <div class="col-md-7">
+                    <div class="banner-left">
+                        <h1> Our analysis, your <span>profits <svg width="225" height="16" viewBox="0 0 225 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M224.931 15.1987C151.063 1.40293 47.4825 6.23252 4.92601 10.3718L0.241161 6.21004C91.4615 -6.66766 188.043 6.83677 224.931 15.1987Z" fill="#7961AA"/></svg></span><br>
+                            Our strategies, your <span>success <svg width="225" height="16" viewBox="0 0 225 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M224.931 15.1987C151.063 1.40293 47.4825 6.23252 4.92601 10.3718L0.241161 6.21004C91.4615 -6.66766 188.043 6.83677 224.931 15.1987Z" fill="#7961AA"/>
+                        </svg></span></h1>
+                            <a href="comingsoon.html"><button type="submit" class="btn btn-red mt-4" >Explore -></button></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="banner-right">
+                        <img class="banner-shapes2 wow animate__animated animate__fadeInDown" src="{% static 'images/toppp.png' %}" alt="Shape Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container slides fade0">
+            <div class="row  flex-md-row align-items-center">
+                <div class="col-md-7">
+                    <div class="banner-left">
+                        <h1> Helping you relate better to your <span>audience <svg width="225" height="16" viewBox="0 0 225 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M224.931 15.1987C151.063 1.40293 47.4825 6.23252 4.92601 10.3718L0.241161 6.21004C91.4615 -6.66766 188.043 6.83677 224.931 15.1987Z" fill="#7961AA"/></svg></span></h1>
+                            <a href="comingsoon.html"><button type="submit" class="btn btn-red mt-4" >Explore -></button></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="banner-right">
+                        <img class="banner-shapes2 wow animate__animated animate__fadeInDown" src="{% static 'graphics/top22.svg' %}" alt="Shape Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding mt-8 ">
+        <div class="container">
+            <div class="row flexreverse">
+                <div class="col-md-6 col-lg-5">
+                    <div class="features-image">
+                        <a href="{% url 'expertise/political-org' %}"><img
+                                src="{% static 'graphics/leader.svg' %}"
+                                alt="Features Image" class="graphics"
+                        /></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7">
+                    <div class="features-content">
+                        <h2 class="pb-8">Political Leaders/ Organizations</h2>
+                    </div>
+                    <div class="oneline" >
+                        <a href="{% url 'expertise/political-org' %}"><h3><span>We ideate Leaders</span> using proven structure, to cultivate them as <span>"people's person"</span> ready to travel extra miles caring for common people.</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="features-content">
+                        <h2 class="pb-8">Educational Organizations</h2>
+                    </div>
+                    <div class="oneline" >
+                        <a href="{% url 'expertise/edu-org' %}"><h3>From <span>schools to universities</span>, from <span>e-learning portals to coaching institutes</span>, we help you with <span>placement strategies, branding and marketing.</span> </h3></a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="features-image">
+                        <a href="{% url 'expertise/edu-org' %}"><img src="{% static 'graphics/edu.svg' %}" alt="Features Image"  class="graphics"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding mb-8">
+        <div class="container">
+            <div class="row flexreverse">
+                <div class="col-lg-5">
+                    <div class="features-image">
+                        <a href="{% url 'expertise/business-houses' %}"><img
+                        src="{% static 'graphics/working.svg' %}"
+                                alt="Features Image" class="graphics"
+                        /></a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="features-content">
+                        <h2 class="pb-8">Business Houses and Brands</h2>
+                    </div>
+                    <div class="oneline">
+                        <a href="{% url 'expertise/business-houses' %}"><h3>From a <span>running business</span> to <span> a brand, from <span>manufacturer</span> to corporate</span> , we help you from finding problems to fixing them.</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" section-padding bg mt-16">
+        <div class="container">
+            <div class="section-title-center">
+                <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Why Polus Technologies?</h2>
+            </div>
+            <div class="row flexreverse">
+                <div class="col-lg-5">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/team.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="features-content" >
+                        <h2 class="pb-8">We are ideaters</h2>
+                        <h5>We ideate leaders by turning them into "people's person"</h5>
+                        <h6>Our quantifiable goals , clear vision  strategies & cutting edge strategies makes us different. </h6>
+                            <h6> We have experience in conceptualising full-scale media plans, developing political campaigns, and executing local political outreach campaigns with precision.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-7">
+                    <div class="features-content">
+                        <h2 class="mt-n4 pb-8">Wide range of expertise in</h2>
+                        <h5 class="pb-8"> Research, Marketing, Sales, Information Technology, Human Resources, Public Relations, Branding,
+                            <span>much more.</span>
+                        </h5>
+                        <h6>We have a team of experts and strategists from IITs and IIMs who are well versed in the latest trends and technologies. </h6>
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/experts.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding bg">
+        <div class="container">
+            <div class="row flexreverse">
+                <div class="col-lg-5">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/brand.svg' %}"
+                                alt="Features Image" class="graphics" style="width:50%;"
+                        />
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="features-content" >
+                        <h2 class="pb-8">We're Brand Highlighters</h2>
+                        <h6>We are not just one-size-fits-all machine developers but efficient and custom result-delivers. </h6>
+                            <h6> We have experience in conceptualising full-scale media plans, developing political campaigns, and executing local political outreach campaigns with precision.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="components-area pt-120 pb-120 section-padding">
+        <div class="container pb-80">
+            <div class="section-title-center">
+                <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">What we do</h2>
+            </div>
+            <div class="row gy-4 pt-20 whatwedo">
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'business-development' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="icon">
+                            <img src="{% static 'icons/bd1.svg' %}" alt="component" />
+                        </div>
+                        <h4>Business<br> Development</h4>
+                        <p>Branding & Content Strategy, B2B B2C Marketing, BPO & Consulting, CRM Lead Nuturing and <span>much more.</span>
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'online-reputation-management' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="icon"><img src="{% static 'icons/online.svg' %}" alt="component"></div>
+                        <h4>Online Reputation Management</h4>
+                        <p> SEO, Social Media Optimization, Online Events, Blog Management, Webinars and <span>much more.</span>
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'offline-reputation-management' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="icon"><img src="{% static 'icons/offline.svg' %}" alt="component"></div>
+                        <h4>Offline Reputation Management</h4>
+                        <p> Compaigns, Road Shows, Offline Ads, Competitions, Seminars, Charity Shows and <span>much more.</span>
+                        </p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <section class="cta-area cta-area-two section-padding bg-red-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Looking for strategies?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+
+
+    {% endblock  %}

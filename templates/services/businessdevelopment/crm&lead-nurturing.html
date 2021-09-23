@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3">CRM & Lead Nurturing</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/prototype.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">CRM & Lead Nurturing and it's relevancy.
+                        </h2>
+
+                    <div class="points"><h6>Basically, Customer relationship management (CRM) is a technology for managing all your company’s relationships and interactions with customers and potential customers. The goal is simple: Improve business relationships. A CRM system helps companies stay connected to customers, streamline processes, and improve profitability.</h6> </div>
+                    <div class="points"><h6>Lead nurturing is the process of developing and reinforcing relationships with buyers at every stage of the sales funnel. Additionally, lengthening sales funnels fosters independence within prospects, creating a greater need for well-crafted lead nurturing programs. These are te basic long term strategies for getting the sales.</h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Building amazing user experiences.</h2>
+                        <div><h5>Your customers are now our customers.</h5> </div>
+                        <div class="points"><h6>CRM services transform initiatives to boost sales, maximize productivity, and improve customer service with unique user experiences. It enables employees to create, assign, and manage customer requests – all while lowering operational costs and escalating time-to-market.</h6> </div>
+                        <div class="points"><h6>We help you escape the complex processes and manual effort so you can get on with business. More leads, more deals closed, more customers retained, and your business growing high as an evergerowing tree. Find one place solution to store all customer information where your conversations/conferences are kept personal, apropos, and up-to-date.</h6> </div>
+                         </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/implement.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding pb-80">
+        <div class="container pb-10">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/trust.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Reinforcing relationships with buyers.
+                        </h2>
+                        <div><h5>Utilizing funnels to their fullest</h5> </div>
+                        <div class="points"><h6>PolusTechnologies nurture your leads intelligently by delivering the most effective message to your customers. </h6> </div>
+                        <div class="points"><h6>Listening to prospects' needs and providing the information and answers they require in order to build trust, raise brand awareness, and maintain an alliance with prospects until they are ready to buy/make a purchase.</h6> </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+    </main>
+    {% endblock %}

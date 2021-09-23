@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3">Seminar & Events</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" section-padding ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src=" {% static 'graphics/team-x.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Seminars, Events their relevancy.
+                        </h2>
+
+                    <div class="points"><h6>
+                        A seminar refers to a grouping of people who have come together to hear from expert keynote speakers and learn about a variety of topics that might interest them and that have an impact on their activities. At a marketing seminar, business owners and marketing professionals interact with experts in their field, obtain information on best marketing practices, get updated on the latest marketing trends and techniques and also network with other people in the field. We assist you in organizing a fruitful seminar by analysing the specifity of your brand.</h6> </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                 <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Attract By Influencing. Making a lasting impression.</h2>
+                        <div><h5>Establishing relations in offline mode</h5> </div>
+                        <div class="points"><h6>Addressing the correct issues at a suitable time and place can draw the attention of many consumers and generate efficient leads. We aim to add value to your events, guided by our fundamental beliefs and our hands-on experience of conferences & event management. </h6> </div>
+
+                        <div class="points"><h6>
+
+                            Polus Technologies' services begin the moment an inquiry is received. We understand the various needs of an event planner and always aim to make each event distinctive.
+
+                            </h6> </div>
+                         </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/collab.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container services">
+        <div class="row gy-4 pt-20">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h5>Professionally organized events</h5>
+                    <p>Polus Technologies is a professional meeting, incentives, events, conferences, and exhibits planner that is dedicated to exceeding our clients' expectations and requests.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <h5>Inspire The Community With Your Work</h5><p>We manage to do the backstage work, you can motivate your audience and gain many customer connections. We verify that your event is planned and executed to reap maximum benefits and create a change.  </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Executing The Plan</h5>
+                    <p> We help in envisioning the event, developing the necessary creativity, and verifying that it is executed precisely. Polus Technologies is aware of the market and collaborates with venues and local service providers. </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Deep Research</h5>
+                    <p> All our event’s preparations begin with understanding your ideas and requirements followed by thorough research. Sharply knitted content made to hook them up over a short period of time is something we are good at doing.</p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+<section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title-center pb-0">
+                    <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                    <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="shape9"></span>
+    <span class="shape12"></span>
+    <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+    <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+</section>
+</main>
+{% endblock %}

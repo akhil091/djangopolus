@@ -1,0 +1,252 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Polus Technologies</title>
+    <!-- Fontawesome CSS -->
+    <link rel="icon" type="image/png" sizes="750x750" href="{% static 'images/FAVICON.png' %}">
+
+    <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}"/>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <!-- SwiperJs CSS -->
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}"/>
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}"/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}"/>
+</head>
+<body>
+<!-- Header Area -->
+<header class="header-area">
+    <nav class="navbar navbar-expand-lg menu_one sticky-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand header_logo" href="{% url 'home' %}">
+                <img class="white_logo main_logo" src="{% static 'images/POLUS-LOGO.png' %}" alt="logo" width="120">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="menu_toggle">
+                <span class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="hamburger-cross">
+                    <span></span>
+                    <span></span>
+                </span>
+            </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="navbar-nav menu ml-auto">
+                <li class="nav-item dropdown submenu active">
+                    <a href="{% url 'home' %}" class="nav-link dropdown-toggle">Home</a>
+                </li>
+                <li class="nav-item dropdown submenu">
+                    <a href="javascript:void(0)" class="nav-link dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item "><a href="{% url 'business-development' %}" class="nav-link">Business Development</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item "><a href="{% url 'branding-strategy' %}" class="nav-link">Branding Strategy</a></li>
+                                <li class="nav-item "><a href="{% url 'content-strategy' %}" class="nav-link">Content Strategy</a></li>
+                                <li class="nav-item "><a href="{% url 'b2b-b2c' %}" class="nav-link">B2B & B2C Marketing Strategy</a></li>
+                                <li class="nav-item "><a href="{% url 'crm-and-lead-nurturing' %}" class="nav-link">CRM & Lead Nurturing</a></li>
+                                <li class="nav-item "><a href="{% url 'digital-and-print-advertising' %}" class="nav-link">Digital & Print Advertising Strategy</a></li>
+                                <li class="nav-item "><a href="{% url 'marketing-automation' %}" class="nav-link">Marketing Automation</a></li>
+                                <li class="nav-item "><a href="{% url 'bpo-services-and-consulting' %}" class="nav-link">BPO Services & Consulting</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a href="{% url 'reputation-management' %}" class="nav-link">Reputation Management</a>
+                            <ul class="dropdown-menu dropdown-x">
+                                <li class="nav-item "><a href="{% url 'online-reputation-management' %}" class="nav-link">Online Reputation<br>Management</a>
+                                    <ul class="dropdown-menu dropdown-y">
+                                        <li class="nav-item "><a href="{% url 'seo' %}" class="nav-link">Search Engine Optimization</a></li>
+                                        <li class="nav-item "><a href="{% url 'content-solutions' %}" class="nav-link">Content Solutions</a></li>
+                                        <li class="nav-item "><a href="{% url 'smo' %}" class="nav-link">Social Media Optimization</a></li>
+                                        <li class="nav-item "><a href="{% url 'webinar-and-events' %}" class="nav-link">Online Events & Webinars</a></li>
+                                        <li class="nav-item "><a href="{% url 'blog-management' %}" class="nav-link">Blog Management</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item "><a href="{% url 'offline-reputation-management' %}" class="nav-link">Offline Reputation<br>Management</a>
+                                    <ul class="dropdown-menu dropdown-y">
+                                        <li class="nav-item "><a href="{% url 'campaigns' %}" class="nav-link">Campaigns</a></li>
+                                        <li class="nav-item "><a href="{% url 'road-shows' %}" class="nav-link">Road Shows</a></li>
+                                        <li class="nav-item "><a href="{% url 'offline-ads' %}" class="nav-link">Offline Ads</a></li>
+                                        <li class="nav-item "><a href="{% url 'seminars' %}" class="nav-link">Seminars & Events</a></li>
+                                        <li class="nav-item "><a href="{% url 'charity-shows' %}" class="nav-link">Charity Shows</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown submenu">
+                    <a href="javascript:void(0)" class="nav-link dropdown-toggle">Our Expertise</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item "><a href="{% url 'expertise/edu-org' %}" class="nav-link">Educational Organizations</a>
+                        </li>
+                        <li class="nav-item "><a href="{% url 'expertise/political-org' %}" class="nav-link">Political Leaders</a>
+                        </li>
+                        <li class="nav-item "><a href="{% url 'expertise/business-houses' %}" class="nav-link">Business Houses and Brands</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown submenu">
+                    <a href="javascript:void(0)" class="nav-link dropdown-toggle">Our Work Process</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item "><a href="{% url 'workprocess/edu-org' %}" class="nav-link">Educational Organizations</a>
+                        </li>
+                        <li class="nav-item "><a href="{% url 'workprocess/political-org' %}" class="nav-link">Political Leaders</a>
+                        </li>
+                        <li class="nav-item "><a href="{% url 'workprocess/business' %}" class="nav-link">Business Houses and Brands</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown submenu">
+                    <a href="javascript:void(0)" class="nav-link dropdown-toggle">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item "><a href="{% url 'aboutus' %}" class="nav-link">About</a></li>
+                        <li class="nav-item "><a href="{% url 'our-team' %}" class="nav-link">Our Team</a></li>
+                        <li class="nav-item "><a href="{% url 'why-choose-us' %}" class="nav-link">Why Choose Us?</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'contact' %}" class="nav-link dropdown-toggle">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+{% block content %}
+{% endblock content %}
+
+
+
+
+<footer class="footer-area bg-black">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-content">
+                            <img class="footerlogo" src="{% static 'images/whitelogo.png' %}" alt="logo" width="120">
+                        <a href="mailto:contact@polustechnologies.com"><i class="fa fa-envelope"></i> contact@polustechnologies.com</a>
+                        <a href="#"><i class="fa fa-location-arrow"></i> 270, 3rd Floor, Albert Victor Road, 1st Main Rd, Chamrajpet, Bengaluru, Karnataka 560018, INDIA </a>
+                        <ul class="social-link-bg" style="float: left;">
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row justify-content-between">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="footer-menu">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="{% url 'aboutus' %}">About</a></li>
+                                    <li><a href="{% url 'our-team' %}">Team</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="footer-menu">
+                                <h4>Services</h4>
+                                <ul>
+                                    <li><a href="{% url 'business-development' %}">Business Development</a></li>
+                                    <li><a href="{% url 'online-reputation-management' %}">Online Reputation Management</a></li>
+                                    <li><a href="{% url 'offline-reputation-management' %}">Offline Reputation Management</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="footer-menu">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-12 " >
+                    <ul>
+                        <li><span>@ Polus Technologies 2021. All Rights Reserved.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots" style="display: none;">
+        <span class="dot0"></span>
+        <span class="dot0"></span>
+    </div>
+</footer>
+<a href="#" class="scrollToTop">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+
+		<script src="{% static 'js/plugin/jquery-3.5.0.min.js' %}"></script>
+		<script src="{% static 'js/plugin/popper.min.js' %}"></script>
+		<script src="{% static 'js/plugin/bootstrap.min.js' %}"></script>
+		<script src="{% static 'js/plugin/TweenMax.min.js' %}"></script>
+		<script src="{% static 'js/plugin/ScrollMagic.js' %}"></script>
+		<script src="assets/js/plugin/animation.gsap.js' %}"></script>
+		<script src="{% static 'assets/js/plugin/debug.addIndicators.min.js' %}"></script>
+		<script src="{% static 'assets/js/plugin/wow.min.js' %}"></script>
+		<script src="{% static 'assets/js/plugin/jquery.nice-select.min.js' %}"></script>
+		<script src="{% static 'assets/js/plugin/jquery.fancybox.min.js' %}"></script>
+		<script src="{% static 'assets/js/plugin/swiper-bundle.min.js' %}"></script>
+		<script src="{% static 'assets/js/plugin/jquery.waypoints.min.js' %}"></script>
+		<script src="{% static 'assets/js/plugin/jquery.counterup.min.js' %}"></script>
+		<script src="{% static 'assets/js/script.js' %}"></script>
+		<script src="{% static 'assets/js/slick.min.js' %}"></script>
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			  var i;
+			  var slides = document.getElementsByClassName("slides");
+			  var dots = document.getElementsByClassName("dot0");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active0", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active0";
+			  setTimeout(showSlides, 10000);
+			}
+			</script>
+
+	</body>
+</html>

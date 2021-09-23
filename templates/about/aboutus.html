@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <section class="banner-area pricing-banner linearbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h1><span>About</span> Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="banner-shapes wow animate__animated animate__fadeInDown"></span>
+        <img class="pricing-shape-4 wow animate__animated animate__fadeInRight" src="{% static 'images/shape/banner-shape6.svg' %}" alt="Shape Image">
+
+    </section>
+
+
+    <!-- Counter Area -->
+    <section class="counter-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 mt-8 mt-lg-0">
+                    <div class="counter-item">
+                        <span class="text-red font-semi-bold">Launched in April</span>
+                        <h2 class="counter">2009</h2>
+                        <span class="text-black">remote from day one</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-8 mt-lg-0">
+                    <div class="counter-item">
+                        <span class="font-poppins font-semi-bold text-red">Our product powers</span>
+                        <div class="counter-number">
+                            <h2 class="counter">32005</h2>
+                            <span>+</span>
+                        </div>
+                        <span class="text-black">customer-facing teams</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-8 mt-lg-0">
+                    <div class="counter-item">
+                        <span class="font-poppins font-semi-bold text-red">We serve customers in</span>
+                        <div class="counter-number">
+                            <h2 class="counter">3000</h2>
+                            <span>+</span>
+                        </div>
+                        <span class="text-black">Company</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-8 mt-lg-0">
+                    <div class="counter-item">
+                        <span class="font-poppins font-semi-bold text-red">Trusted By</span>
+                        <div class="counter-number">
+                            <h2 class="counter">3000</h2>
+                            <span>+</span>
+                        </div>
+                        <span class="text-black">Company</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Area -->
+
+    <!-- Our Story Area -->
+    <section class="our-story-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mt-n4">We see your success as our success!</h2>
+                </div>
+                <div class="col-lg-6">
+                    <h5>We are a creative team of experienced consultants, strategists, researchers, marketers and developers providing business development solutions and consulting.</h5>
+                    <br>
+                    <p>We understand that running a business has many paraphernalia that most times fall out of your direct sphere of expertise but have a huge and long term impact on the services and tasks you perform.</p>
+                    <br>
+                    <h5>So we are here to take those tasks off your hands!</h5>
+                </div>
+                <div class="col-lg-6">
+                    <h5>Our ambition is to become the best branding solutions and consultancy provider, comprehensively recognized and highlighted as a strategic partner – passionately serving our users.</h5>
+                    <br>
+                    <p>Polus Technologies balances your Online and Offline Reputation Management needs and orchestrates them with overall company development goals. We focus on collecting and analyzing demographic data and devising an approach that suits you the best. We find the thin balance of portraying a unified image of your brand online, on ground and in the boardrooms!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="components-area pt-120 pb-120 section-padding aboutus">
+        <div class="container pb-80">
+            <div class="section-title-center">
+                <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">What we do</h2>
+            </div>
+            <div class="row gy-4 pt-20 whatwedo">
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'business-development' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="icon">
+                            <img src="{% static 'icons/bd1.svg' %}" alt="component" />
+                        </div>
+                        <h4>Business<br> Development</h4>
+                        <p>Branding & Content Strategy, B2B B2C Marketing, BPO & Consulting, CRM Lead Nuturing and <span>much more.</span>
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'online-reputation-management' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="icon"><img src="{% static 'icons/online.svg' %}" alt="component"></div>
+                        <h4>Online Reputation Management</h4>
+                        <p> SEO, Social Media Optimization, Online Events, Blog Management, Webinars and <span>much more.</span>
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'offline-reputation-management' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="icon"><img src="{% static 'icons/offline.svg' %}" alt="component"></div>
+                        <h4>Offline Reputation Management</h4>
+                        <p> Compaigns, Road Shows, Offline Ads, Competitions, Seminars, Charity Shows and <span>much more.</span>
+                        </p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <section class="cta-area cta-area-two section-padding bg-red-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Looking for strategies?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+
+    {% endblock %}

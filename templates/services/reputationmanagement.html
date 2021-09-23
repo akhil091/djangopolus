@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3">Reputation Management</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section class=" section-padding">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/process.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Reputation Management and it's relevancy.
+                        </h2>
+
+                    <div class="points"><h6>Reputation management is the practice of influencing stakeholder perceptions and public conversations about an organization and its brands. It includes monitoring perceptions and conversations, responding to reputation threats and proactively seizing opportunities to boost reputation. It's no big deal to understand how much of a prerequisite it becomes to build your reputation in the market to succeed. </h6> </div>
+                    <div class="points"><h6>Polus Tecchnology arms you with these superpowers so you can focus on you main endeavours while letting us do this for you.</h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                 <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Reputation matters. And we understand that</h2>
+                        <div><h5>Getting higher in the hierarchy</h5></div>
+                        <div class="points"><h6>
+                             Our exposure & experience makes sure your company attain the required reputation among the perspective crowd. We have accomplished team, which helps you with the ways and means to achieve higher scale of reputation. Our team works on each level at their end then serves you the result from online & offline both.
+
+                            </h6> </div>
+
+                        <div class="points"><h6>We analyse your present reputation, lay down the facts and dissect a results fetching strategy to formulate a plan to continue with.</h6> </div>
+                         </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/analysis.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/online_ad.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <a href="{% url 'online-reputation-management' %}">
+                    <div class="features-content" >
+
+                       <h2 class="pb-8"> Online Reputation Management. Dominating the game.
+                        </h2>
+                        <div><h5>Majority of the market is going online then why shouldn't we?.</h5> </div>
+                        <div class="points"><h6>Polus technologies expertise in ORM. Our expert ORM team have the practice to envisage the appropriate content, SEO content. With this process we assure continuous promotion on various platform, like Facebook, LinkedIn, Twitter, Tumblr. </h6> </div>
+                        <div class="points"><h6>Polus technologies guarantees to scale up the reach of any business identities by planning & organising unique online event & webinar.</h6> </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                 <div class="col-md-6 col-lg-8">
+                    <a href="{% url 'offline-reputation-management' %}">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Offline Reputation. Hitting it off.</h2>
+                        <div><h5>Maximizing growth by remodelling offline reputation</h5></div>
+                        <div class="points"><h6>
+                            Polus technologies gives the equal attention to offline customers also. We agree that online promotional tools are giving us rate of reputation. Even though we cannot skip the offline crowd. There also we can get the amount of business prospect.
+
+                            </h6> </div>
+
+                        <div class="points"><h6>Polus technologies works with expert ideate, experienced in planning customize campaign, Road shows, seminar, workshops, competitors, charity shows, outdoor & print, digital advertisement. Our service assures high connectivity and client conversion.</h6> </div>
+                         </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/newspaper.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+    </main>
+    {% endblock %}

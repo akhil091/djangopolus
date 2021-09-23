@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3"> Business Development</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">
+                            Right Business Development Strategy = Key To Success
+                            </h2>
+                        <div class="points"><h6>When it comes to scaling and developing a business, it's not an easy task at all. If you want to maximize your profits in a short span, you literally can't ignore the importance of a well placed blueprint, and niche-specialized mentors to guide you through every step, so the experts at Polus Technologies get this job done for you. </h6> </div>
+                        <div class="points"><h6>We dont just ideate and provide you the guidance, we also execute a big part of it through the services we provide, and that makes us inherently different from others. We armed your business with different marketing strategies, content strategy, advertising, branding strategy, lead nurturing, providing BPO services, and much more, all these at one place to save your time and energy.</h6> </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/cart.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/finance.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">What We Can Help You With?
+                        </h2>
+
+                    <div class="points"><h6>Polus Technologies will provide insights and customized input to rail track your success journey. We summon your resources, gather statistical data, and graphical representation of your current status and performances. We picture the follow-up process of your business to maximize more results in the future.
+
+                  </h6></div>
+                    <div class="points"><h6>We scale your potential to the core and reframe a high peak graph by our services and consultancy. We help you scale and integrate the skills/potential of each staff member to achieve advancement of your company with employee comfort too.
+
+                    </h6> </div>
+                    <div class="points"><h6>We plan the right kind of action, design the mode of working and paint you the success picture of your leader era.
+
+                    </h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+
+                    <div class="features-content" >
+                        <h2 class="pb-8">Why we can be a gamechanger for your brand?</h2>
+                        <div><h5>Work with the best.</h5> </div>
+                        <div class="points"><h6>We put forward our wide range of services to enhance your business platform to a substantial level. We excel at providing branding, digital and print advertising, B2B and B2C strategies, BPO services & consulting and much more. Not just that, we analyze the market, set objectives, map strategies for evaluation and implementation.  </h6> </div>
+
+                        <div class="points"><h6>We treat every client as an individual and create a unique branding to represent what you do to create the best impression to your customers.</h6> </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/tech_support.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class=" section-padding pb-80">
+
+        <div class="container services">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="mt-n3">Business Development Strategies</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 pt-20">
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'branding-strategy' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <h5>Branding Strategy</h5>
+                        <p> We help you in from curating a list of brand essence to defining a set of brand values and procreating the appropriate tagline, from formulating long-term brand strategies to laying the groundwork for short-term product promotion and development.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'content-strategy' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <h5>Content Strategy</h5>
+
+                        <p>Our research teams employ content intelligence tools to develop a data-driven strategy that defines your audience's concerns and discovers the content that attracts and engages.Our accurate KPIs measurements enable you to demonstrate your content marketing ROI.
+                        </p>
+                    </div>
+                </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'b2b-b2c' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>B2B & B2C Marketing Strategy</h5>
+                        <p> We perform a careful opportunity analysis along with market and demographic research to study and understand the market thoroughly before offering a solution.We generate leads and prospects and build strong, resilient ties between you and your audience.
+                        </p>
+                    </div>
+                </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'crm-and-lead-nurturing' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>CRM & Lead Nurturing</h5>
+                        <p>
+                            Through benchmarking, system redesign, and competency building, we help firms quantify the effectiveness of their customer experience transformation efforts across segments, channels and touchpoints.
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'digital-and-print-advertising' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>Digital & Print Advertising Strategy</h5>
+                        <p>We help you from interactive and easily adaptable newsletters to visually appealing graphics, from magazines to posters and flyers, as well as production and distribution strategies to ensure you make a lasting impact.
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'marketing-automation' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>Marketing Automation</h5>
+                        <p>Marketing Automation systems assist marketers and sales teams in increasing revenue and optimizing efficiency across a wide range of use cases, including lead generation, engaging and nurturing leads, lead scoring, customer service and retention, customer delight, and much more.
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'bpo-services-and-consulting' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>BPO Services & Consulting</h5>
+                        <p>
+                            With talent acquisition experts and training team,  we support you in hiring top talent, focusing on cultivating long-term connections, strategically constructing applicant pools to meet current and future company needs and building a sustainable skill base for a diverse workforce  by training them to work full-time to meet customer expectations.
+                        </p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+    </main>
+    {% endblock %}

@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="whyus">
+    <!-- Banner Area -->
+    <section class="banner-area pricing-banner linearbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h1><span>why  </span> choose us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="banner-shapes wow animate__animated animate__fadeInDown"></span>
+        <img class="pricing-shape-4 wow animate__animated animate__fadeInRight" src="{% static 'images/shape/banner-shape6.svg' %}" alt="Shape Image">
+
+    </section>
+    <!-- Banner Area -->
+    <section class=" section-padding bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/team.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="features-content" >
+                        <h2 class="pb-8">We ideate leaders by turning them into "people's person"</h2>
+                        <h6>Our quantifiable goals , clear vision  strategies & cutting edge solutions makes us different. </h6>
+                            <h6> We have experience in conceptualising full-scale media plans, developing political campaigns, and executing local political outreach campaigns with precision.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding  bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-7">
+                    <div class="features-content">
+                        <h2 class="mt-n4 pb-8">Wide range of expertise in</h2>
+                        <h5 class="pb-8"> Research, Marketing, Sales, Information Technology, Human Resources, Public Relations, Branding,
+                            <span>much more.</span>
+                        </h5>
+                        <h6>We do complete product & market analysis, and provide tailor- made solutions that help you reach your peak efficiency.
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/experts.svg' %}" alt="Features Image" class="graphics" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/brand.svg' %}"
+                                alt="Features Image" class="graphics" style="width:50%;"
+                        />
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="features-content" >
+                        <h2 class="pb-8">We're Brand Highlighters</h2>
+                        <h6>We are not just one-size-fits-all machine developers but efficient and custom result-delivers. </h6>
+                            <h6> We have experience in conceptualising full-scale media plans, developing political campaigns, and executing local political outreach campaigns with precision.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding  bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-7">
+                    <div class="features-content">
+                        <h2 class="pb-8">Extensive Researchers and Strategists</h2>
+
+                        <h6>Providing services and solutions is the aftermath. We lay you an extensive map of your growth staircase. We study your business and then drive our experts to your result lane.
+                        </h6>
+                        <!-- <ul class="square">
+                            <li>We do complete product & market analysis, and provide you with tailor- made solutions that help you reach your peak efficiency</li>
+                        </ul> -->
+                        <!-- <div class="features-counter">
+                            <span>Trusted By </span>
+                            <br/>
+                            <strong><span class="counter">3000</span>+</strong>
+                            <br/>
+                            <p>Companies</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/researchers.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding bg pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/trust.svg' %}"
+                                alt="Features Image" class="graphics" style="width:50%;"
+                        />
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Trusted and Committed to Quality</h2>
+                        <h6>Committed to meeting customer expectations and driven by the dedication, accountability, honesty and discipline of our professional employees.</h6>
+                        <h6>Polus Technologies become an extra arm to your business and prove to be your trusted resource partner with one eye on your best interests.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <section class="cta-area cta-area-two section-padding bg-red-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Looking for strategies?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+    {% endblock %}

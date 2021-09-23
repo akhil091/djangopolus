@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3">Road Shows</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/plan.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Road Shows and their relevancy.
+                        </h2>
+
+                    <div class="points"><h6> A road show is a series of marketing events that allow you to reach a large and targeted audience. It's an extremely powerful and engaging tool for offline reputation management. And we push you one more step by analysing a superior venue and environment for your roadshows to happen. </h6> </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                 <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Promoting your business and connecting with your target audience on the go </h2>
+                        <div><h5>Hooking them up with us</h5> </div>
+                        <div class="points"><h6>In order to raise brand awareness and product expertise, roadshows are frequently held in a series. Roadshows are an excellent approach to spread the message in a hands-on, engaging fashion to those you might not otherwise be able to reach. </h6> </div>
+
+                        <div class="points"><h6>
+                          This is how Roadshows can grow your organization?
+                            </h6> </div>
+                         </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/team-x.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container services pb-10">
+        <div class="row gy-4 pt-20">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h5>Provide Your Outreach Team What It Needs</h5>
+                    <p>Conversations flow more easily in a setting where everyone has something in common: they all come to learn more about you and what you have to offer. And we know how to tap into that.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <h5>Promote Your Image.</h5>
+.
+                    <p> Exceptional information, a dynamic setting, and a fantastic interaction will leave your attendees with nothing but favorable thoughts and a long-lasting excellent impression you aspire for.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Boost The Spread Of Your Leadership</h5>
+                    <p> These events give speakers the opportunity to speak on the main stage on what problems a common man faces and how you could help solve them. We do the study so you can talk and resolve the bigger issues.</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>
+<section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title-center pb-0">
+                    <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                    <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="shape9"></span>
+    <span class="shape12"></span>
+    <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+    <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+</section>
+</main>
+{% endblock %}

@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3"> Branding Strategy</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/implement.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Branding Strategy and it's relevancy.
+                        </h2>
+
+                    <div class="points"><h6>A branding strategy is the long-term plan to achieve a series of long-term goals that ultimately result in the identification and preference of your brand by consumers. A successful branding strategy encompasses the brand's mission, its promises to its customers, and how these are communicated by the organization itself.</h6> </div>
+                    <div class="points"><h6>It becomes quintessential to have a well marked branding strategy to establish your credibility and to stand out in a saturated market. It leads to customer layalty, and consistentcy fom the consumer's side oftentimes resulting in getting referrals via the same consumers.</h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Strategic Execution, Which Will Yield A Fast And Optimised Growth For Your Brand, Is What We Excel At</h2>
+                        <div><h5></h5> </div>
+                        <div class="points"><h6>Every business wants to elevate its identity, and at Polus technologies we solve the "HOW's" of making it possible for you.  </h6> </div>
+                        <div class="points"><h6>We hear and identify your potential audience, demistify the complexities to lay them in the simplest ways for you to execute.</h6> </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/strategists.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding pb-80">
+        <div class="container pb-10">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/experts.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Creative Team Which Makes It Possible For Brands Like Yours.
+                        </h2>
+
+                    <div class="points"><h6>Our creative knights pave the way to strengthen your brand positioning in the market, and our brand ideators guide the clients to craft the right steps to brand your business.</h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container services">
+            <div class="row gy-4 pt-20">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <h5>Researchful Analysis</h5>
+                        <p>Numbers don't lie and we let them tell the truth openly. Before coming down to a final blueprint our expert research team goes through a number of hierarchical research methods to find the best one out for your brand after analysing your competitiors and your present report
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <h5>Prioritizing Your Audience</h5>
+
+                        <p>We take care of your audience so that they will take care of your brand, we understand the dynamics and take that in use to sueeze the juice for your brand while making your brand the favourite of your audience
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>Building Brand Essence</h5>
+                        <p> We solidify your brand presence as we understand how important it is to shape the personality of your brand to voice your strategies to your audience and establishing connection with them.     </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>Value Identification</h5>
+                        <p>
+                           As rigid we are in delivering nothinhg except excellence for your brand, we are equally flexible in our approach to go with the changing curve and market trends to save your brand from any kind of potential harm which can resist your growth.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+    </main>
+    {% endblock %}

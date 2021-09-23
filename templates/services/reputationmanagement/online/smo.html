@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3">Social Media Optimization</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/social-1.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Social Media Optimization and it's relevancy.
+                        </h2>
+
+                    <div class="points"><h6>Social media optimization (SMO) is the use of social media networks to manage and grow an organization's message and online presence. As a digital marketing strategy, social media optimization can be used to increase awareness of new products and services, connect with customers, and mitigate potential damaging news.  </h6> </div>
+                    <div class="points"><h6>Times have changed, and adpatation as another thing that we excel at, we customize your socials to put you on the top spot when it comes to lead generation.</h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                 <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Organize your socials. Say hi to the world.</h2>
+                        <div><h5>Strategizing accordingly for all the relevant platforms</h5></div>
+                        <div class="points"><h6>We help you in establishing a strong internet presence and grow your influence. This will not only familiarize the public with your business but will also help you become a part of the discussion.
+                            </h6> </div>
+
+                        <div class="points"><h6>Polus Technologies provides you with a team of experts which will spread the word for your brand in an optimised way.</h6> </div>
+                         </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/social-growth.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container services">
+        <div class="row gy-4 pt-20">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h5>SMO Management</h5>
+                    <p>Using our social platforms to build traction, we create a working social marketing strategy to make customers connect directly to your brand.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <h5>Salient Features</h5>
+
+                    <p>Our strategies include some unique features, such as knowledge graph publishing, tailored keyword research, hast tag strategies, and quality delivering.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Speed up your influencing venture</h5>
+                    <p> We stand out in search: our team of content marketing, data analysis, and technical SMO experts will get you relevant traffic.    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Well Structured Content</h5>
+                    <p>
+                        Polus Technologies adds a layer of structured data. It assists in search engines swiftly recognized and people can find a well followed approach in our working by looking at your feed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Custom knowledge Demographics</h5>
+                    <p>
+                        All the structured data created by Polus Technologies are connected by meaningful links and published on a knowledge graph built and refined around your content model.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+    </main>
+    {% endblock %}

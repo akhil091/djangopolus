@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3">Digital & Print Advertising Strategy</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/printing.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Digital & Print Advertising Strategy and it's relevancy.
+                        </h2>
+
+                    <div class="points"><h6>The Internet and other technology have transformed the way brands tell their story in the digital age. With the addition of digital media, you have more marketing methods than ever before. Yet, when promoting your brand, it’s critical not to forget about print advertising. Thus, at Polus Technologies, our team uses most effective marketing campaigns use a combination of print ads and digital advertising.</h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">HOWs and WHYs, we solve them all for you. </h2>
+                        <div><h5>Finding the right choice.</h5> </div>
+                        <div class="points"><h6>Analyzing target audience, keeping abreast of media developments, reading market trends, and understanding motivations of consumers – our dedicated teams of experienced advertisers do it all.</h6></div>
+                        <div class="points"><h6> Our media planning approach not only helps to broadcast messages but also answers big questions like "Why here?" and "How should print media conversions be considered?" Whether you need to display your ethos on print media, online advertisements, or a blog, we're here to help</h6> </div>
+                         </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/online_ad.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/collab.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">More personalized interactions = Strengthening dynamics
+                        </h2>
+                        <div><h5>Connect To Your Audience with Newsletters and much more</h5> </div>
+                        <div class="points"><h6>Our ideators at Polus technologies create newsletters and corporate publications that communicate with your target audience. Newsletters are not only cost-effective and quick,  but also trackable, interactive, and easily adaptable. With our expertise, the possibilities are endless. Contact us to get started today.</h6> </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Designs that potray the deeply rooted trust and elegance we have in our services. </h2>
+                        <div><h5>Get ready to be the  center of attention</h5> </div>
+                        <div class="points"><h6>Analyzing target audience, keeping abreast of media developments, reading market trends, and understanding motivations of consumers – our dedicated teams of experienced advertisers do it all.</h6></div>
+                        <div class="points"><h6> Our media planning approach not only helps to broadcast messages but also answers big questions like "Why here?" and "How should print media conversions be considered?" Whether you need to display your ethos on print media, online advertisements, or a blog, we're here to help</h6> </div>
+                         </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/design-x.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+    </main>
+    {% endblock %}

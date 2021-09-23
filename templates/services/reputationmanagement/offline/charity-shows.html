@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3">Charity Shows</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="undr{% static 'graphicsaw/team-x.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Charity Shows and their relevancy.
+                        </h2>
+
+                    <div class="points"><h6>
+                        A charity event serves two purposes: to raise awareness for a specific cause and raise money. People by nature are very charitable and are willing to give to your organization to make a difference. The difference these events can create for yourbrand's public image can be tremendously lucrative. For better charity event planning we guide you to maximize both attendance and monetary donations.</h6> </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                 <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Your Event’s Success, Our Promise of Precision</h2>
+                        <div><h5>Firm believer of performance</h5> </div>
+                        <div class="points"><h6>We understand charity show planning is different from organizing regular events. It is critical to keep operational costs to a minimum while maximizing donations. All of this while keeping the spirit of the cause and your brand image in cohesion. </h6> </div>
+
+                        <div class="points"><h6>
+
+
+Polus Technologies can assist in planning, designing, and executing the entire event.
+
+
+                            </h6> </div>
+                         </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/finance.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container services">
+        <div class="row gy-4 pt-20">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h5>Helping the Community</h5>
+                    <p>Charity shows are truly a win-win situation for all parties involved. There are thousands of wonderful charitable organizations out there, and they would all be delighted to collaborate with you.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <h5>Pooling your resources towards the best outcomes</h5><p>Our team will put your resources to best use and help you book a venue, organize styling, audiovisual, catering, and entertainment, all while staying within budget. </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Promoting Team Morale</h5>
+                    <p> Fostering a productive and happy culture also improves your chances of retaining your current workforce and attracting new leads.  </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Shining a positive light on your brand</h5>
+                    <p> Charity shows are a rich source of audience engagement, particularly with younger generations who are more likely to engage with you and discuss social responsibility issues.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h5>Theme Assembling</h5>
+                    <p> Stuck on ideas? No need to worry. As experienced charity show planners, we are excited to help. The theme is what ties the whole event together.  </p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title-center pb-0">
+                    <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                    <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="shape9"></span>
+    <span class="shape12"></span>
+    <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+    <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+</section>
+</main>
+{% endblock %}

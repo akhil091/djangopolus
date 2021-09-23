@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3">Content Strategy</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/blogging.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">Content Strategy and it's relevancy.
+                        </h2>
+
+                    <div class="points"><h6>Content strategy is the ongoing process of transforming business objectives and goals into a plan that uses content as a primary means of achieving those goals.</h6> </div>
+                    <div class="points"><h6>It becomes pretty essential to have a solid content strategy to thrive in all aspects.</h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Quality of content can make or break the credibility of your brand's web presence</h2>
+                        <div><h5></h5> </div>
+                        <div class="points"><h6>It's well established that content is the king when it comes to build your credibilty and grow your brand. But how do you plan what's relevant and what will definitely work for your brand? Well, we have got you covered. </h6> </div>
+                        <div class="points"><h6>We build a bridge between you and your clients by our results fetching content management strategies</h6> </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/wordpress.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding pb-80">
+        <div class="container pb-10">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/team-x.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8"> Effectively Targeting all possible spectrums = Maximizing your results.
+                        </h2>
+
+                    <div class="points"><h6>Why reluct yourself when you can reach out to masses under our expertised supervision which has been fetching lucrative results consistently. Our services include web designing, webpage content and creating content for offline and different promotions, and everything in between. </h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container services">
+            <div class="row gy-4 pt-20">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <h5>Website content</h5>
+                        <p>As a quintessential part to have a strong web presence, having a website becomoes pretty cliched, but having a resourceful website which conveys your value and vision to your viewers effectively is what makes one stand out.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <h5>Prioritizing Your Audience</h5>
+
+                        <p>We take care of your audience so that they will take care of your brand, we understand the dynamics and take that in use to sueeze the juice for your brand while making your brand the favourite of your audience
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>Building Brand Essence</h5>
+                        <p> We solidify your brand presence as we understand how important it is to shape the personality of your brand to voice your strategies to your audience and establishing connection with them.     </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>Adapting accordingly to the response </h5>
+                        <p>
+                           As rigid we are in delivering excellence for your brand, we are equally flexible in our approach to go with the changing curve and market trends to save your brand from any potential harm which might resist your growth.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+    </main>
+    {% endblock %}

@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="banner-area contact-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="font-bold mt-n3"> Online Reputation Management</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">
+                            Complete package to rule the online marketplace
+                            </h2>
+                        <div class="points"><h6>We provide the complete package to rule the online marketplace from influencing to advertising, content solutions for an elite brand image, search engine optimization to keep up with the organic traffic leads, blog management to help potential audience connect with us, Social media optimization to advertise, and much more. </h6> </div>
+                        <div class="points"><h6>We don't just ideate and provide you the guidance, we also execute a big part of it through the services we provide, and that makes us inherently different from others.</h6> </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/online.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section-padding ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="features-image">
+                        <img
+                        src="{% static 'graphics/online_ad.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="features-content" >
+
+                        <h2 class="pb-8">What We Can Help You With?
+                        </h2>
+
+                    <div class="points"><h6>
+
+                  </h6></div>
+                    <div class="points"><h6>We strengthen your potential to the core and reframe a high peak graph by our services and consultancy. All departments including, production, marketing, HR, Polus scale and integrate the skills/potential of each staff member to achieve advancement of your company with employee comfort too.
+
+                    </h6> </div>
+                    <div class="points"><h6>We plan the right kind of action, design the mode of working and paint you the success picture of your leader era.
+
+                    </h6> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <div class="features-content" >
+                        <h2 class="pb-8">Why we can be a gamechanger for your brand?</h2>
+                        <div><h5>Work with the best.</h5> </div>
+                        <div class="points"><h6>We put forward our wide range of services to enhance your online presence and the results you are getting from it. With our niche-specific experts, we make it possible to break down the blueprint of growth for your company and get it done by the individual experts of that field. </h6> </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="features-image">
+                        <img
+                                src="{% static 'graphics/team.svg' %}"
+                                alt="Features Image" class="graphics"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class=" section-padding pb-80">
+
+        <div class="container services">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center">
+                        <h2 class="mt-n3">Online Reputation Management Strategies</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 pt-20">
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'seo' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <h5>Search Engine Optimization</h5>
+                        <p> A custom SEO campaign targets on-page and off-page SEO, which includes keywords research and content implementation, to help your most valuable audience find you online.
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'content-solutions' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <h5>Content Solutions</h5>
+
+                        <p>We handle every aspect of your content development, from generation to management, from copywriting to online PR, allowing you to develop leadership in your industry.
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'smo' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>Social Media Optimization</h5>
+                        <p>We help you in establishing a strong internet presence and grow your influence. This will not only familiarize the public with your business but will also help you become a part of the discussion.
+                        </p>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'webinar-and-events' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>Online Events & Webinars</h5>
+                        <p>From planning to post-event analysis we offer the tools needed to effectively host large-scale events and webinars for targeted audience, so that you engage with audience most effectively, and generate leads.
+                        </p>
+                    </div></a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="{% url 'blog-management' %}">
+                    <div class="single-component-widget wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h5>Blog Management</h5>
+                        <p>We provide relevant blog post ideas, manage your editorial calendar, and create enriched-quality SEO-friendly content tailored to increase traffic and thus the SEO of your website.
+                        </p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta-area cta-area-two section-padding bg-red-150 mt-5rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-center pb-0">
+                        <h2 class="mt-n4 font-bold">Can’t find what you’re looking for?</h2>
+                        <a href="{% url 'contact' %}"><button class="btn btn-red">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="shape9"></span>
+        <span class="shape12"></span>
+        <img class="shape10 d-none d-lg-block" src="{% static 'images/shape/shape10.svg' %}" alt="Shape">
+        <img class="shape11 d-none d-lg-block" src="{% static 'images/shape/shape11.svg' %}" alt="Shape">
+    </section>
+    </main>
+    {% endblock %}
